@@ -9,6 +9,9 @@ using Sitecore.Mvc.Presentation;
 using Sitecore.Data.Fields;
 using System.Linq;
 using System.Web;
+using Sitecore.XA.Foundation.SitecoreExtensions.Interfaces;
+using Sitecore.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace CustomSXA.Foundation.MapExtension
 {
@@ -37,7 +40,10 @@ namespace CustomSXA.Foundation.MapExtension
 
         public Coordinate SetLocationCentre()
         {
-            string sign = RenderingContext.CurrentOrNull.Rendering.Parameters["Signature"];
+            IRendering rendering = ServiceLocator.ServiceProvider.GetService<IRendering>();
+            if (rendering == null)
+                return null;
+            string sign = rendering.Parameters["Signature"];
             string coordinates = string.Empty;
             double lat, lon;
             if (System.Web.HttpContext.Current.Request.Cookies[$"{sign}_g"] != null)
