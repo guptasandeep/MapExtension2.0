@@ -70,7 +70,8 @@ namespace CustomSXA.Foundation.MapExtension.Controllers
                 string name = this._context.Site.SiteInfo.Name;
                 Unit units = parametersParsingService.GetUnits((IEnumerable<string>)sortings, name);
 
-                //include same coordinates locations
+                //Include same coordinates locations
+                //Here Parent of the requested POI is considered as the root item path. Do customize it further based on your requirement.
                 Item[] sameLocationItems = Sitecore.Context.Database.SelectItems($"{contentItem.Parent.Paths.FullPath}//*[@@templatename ='POI' and @Latitude='{contentItem.Fields["Latitude"]}' and @Longitude='{contentItem.Fields["Longitude"]}']");
 
                 RenderVariantResult finalResult = null;
