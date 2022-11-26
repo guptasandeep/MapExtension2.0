@@ -64,12 +64,12 @@ Following has the blog post URLs and local test URLs which one can use to test i
 5. Custom SXA token for search scope query to support all the filter operations
 - https://blogs.perficient.com/2022/08/28/custom-sxa-token-for-search-scope-query-to-support-all-the-filter-operations/
 - Test URL: https://sitecorethinkersc.dev.local/Search%20Developers/Developers
-***Note: Please toggle the filter +, - and default i.e. no filter at Developer scope item and observe the different output on the actual Developer page.***
+  - ***Note: Please toggle the filter +, - and default i.e. no filter at Developer scope item and observe the different output on the actual Developer page.***
 
 6. Query string-based custom SXA Search tokens for various search results scenarios
 - https://blogs.perficient.com/2022/09/05/query-string-based-custom-sxa-search-tokens-for-various-search-results-scenarios/
 - Test URL: https://sitecorethinkersc.dev.local/Search%20Developers/Developers#first%20name=Rakesh&last%20name=Gupta
-***Note: Please update the scope item for search result component and the query string as shown in the blog post for testing purpose.***
+  - ***Note: Please update the scope item for search result component and the query string as shown in the blog post for testing purpose.***
 
 7. SXA Sort search results by distance for mapped multiple locations
 - https://blogs.perficient.com/2022/09/19/sxa-sort-search-results-by-distance-for-mapped-multiple-locations/
