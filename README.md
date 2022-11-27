@@ -49,16 +49,16 @@ Following has the blog post URLs and local test URLs which one can use to test i
 
 2. SXA Map component Part 2 With Search results and Location Finder
 - https://blogs.perficient.com/2022/06/29/sxa-map-component-part-2-with-search-results-and-location-finder/
-- Test URL: https://sitecorethinkersc.dev.local/Location%20Demo/Same%20Location%20Demo/Location%20Search%20Result#g=39.768403|-86.158068&o=null%2CAscending&a=Indianapolis%2C%20IN%2C%20USA
+- Test URL: https://sitecorethinkersc.dev.local/Location%20Demo/Same%20Location%20Demo/Location%20Search%20Result#g=39.768403|-86.158068&o=Distance%2CAscending&a=Indianapolis%2C%20IN%2C%20USA
 
 3. SXA Map component Part 3 Show distance in POI Marker
 - https://blogs.perficient.com/2022/06/29/sxa-map-component-part-3-show-distance-in-poi-marker/
-- Test URL: https://sitecorethinkersc.dev.local/Location%20Demo/Same%20Location%20Demo/Location%20Search%20Result#g=39.768403|-86.158068&o=null%2CAscending&a=Indianapolis%2C%20IN%2C%20USA
+- Test URL: https://sitecorethinkersc.dev.local/Location%20Demo/Same%20Location%20Demo/Location%20Search%20Result#g=39.768403|-86.158068&o=Distance%2CAscending&a=Indianapolis%2C%20IN%2C%20USA
 
 4. SXA Map component Part 4 Show POI markers for the same coordinates
 - https://blogs.perficient.com/2022/07/31/sxa-map-component-part-4-show-poi-markers-for-the-same-coordinates/
 - Test URL:
-  - Scenario 1 https://sitecorethinkersc.dev.local/Location%20Demo/Same%20Location%20Demo/Location%20Search%20Result#g=39.768403|-86.158068&o=null%2CAscending&a=Indianapolis%2C%20IN%2C%20USA
+  - Scenario 1 https://sitecorethinkersc.dev.local/Location%20Demo/Same%20Location%20Demo/Location%20Search%20Result#g=39.768403|-86.158068&o=Distance%2CAscending&a=Indianapolis%2C%20IN%2C%20USA
   - Scenario 2 https://sitecorethinkersc.dev.local/Location%20Demo/Same%20Location%20Demo/Map
 
 5. Custom SXA token for search scope query to support all the filter operations
