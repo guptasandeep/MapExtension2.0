@@ -35,7 +35,7 @@ https://github.com/guptasandeep/SitecoreThinker.git
 7. Login to Sitecore, traverse to below item and provide the valid Google Map provider key in the field Key. Save and do the full site publish.
 - /sitecore/content/demotenant/sitecorethinker/Settings/Maps Provider
 
-8. Rebuild all the indexes.
+8. From Sitecore control panel > pleaes do the Populate Solr Managed Schema and Rebuild all the indexes.
 
 ## Contributions on the Perficient Blog https://blogs.perficient.com/author/gsandeepkumar/
 
