@@ -5,7 +5,7 @@ Following are the instruction to test the source code shown in the blog posts.
 
 ## PreRequisites
 
-- Sitecore 10.1 with SXA installed in local
+- Sitecore 10.2 with SXA installed in local
 - Developer workstation to validate the solution
 - Google Map provider key
 
