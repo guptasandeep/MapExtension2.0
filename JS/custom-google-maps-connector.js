@@ -1,3 +1,4 @@
+/* eslint-disable */
 XA.connector.mapsConnector = (function ($, document) {
 
     "use strict";

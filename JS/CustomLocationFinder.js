@@ -1,3 +1,4 @@
+/* eslint-disable */
 XA.component.customlocationfinder = (function ($, document) {
 
      "use strict";
