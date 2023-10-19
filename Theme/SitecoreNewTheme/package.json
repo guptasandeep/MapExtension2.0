@@ -1,0 +1,66 @@
+{
+    "name": "@sxa/theme",
+    "version": "10.3.0",
+    "description": "SXA Theme",
+    "keywords": [
+        "SXA",
+        "Creative Exchange Live",
+        "Sitecore Experience Accelerator",
+        "Gulp",
+        "Theme"
+    ],
+    "scripts": {
+        "postinstall": "node ./gulp/config.js",
+        "gulp": "./node_modules/gulp/bin/gulp.js",
+        "doc": "rimraf ./jsdoc/ | jsdoc -c ./node_modules/@sxa/celt/jsdoc.json"
+    },
+    "author": "Sitecore Corporation A/S",
+    "homepage": "https://doc.sitecore.com/xp/en/developers/sxa/103/sitecore-experience-accelerator/modify-your-site-design-with-creative-exchange-live.html",
+    "license": "https://doc.sitecore.net/~/media/C23E989268EC4FA588108F839675A5B6.pdf",
+    "main": "index.js",
+    "dependencies": {
+        "@babel/polyfill": "^7.8.7",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^8.0.0",
+        "gulp-babel": "^8.0.0",
+        "gulp-cli": "^2.2.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-eslint": "^6.0.0",
+        "gulp-filter": "^7.0.0",
+        "gulp-if": "^3.0.0",
+        "gulp-prompt": "^1.2.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^5.0.0",
+        "gulp-sass-bulk-import": "^1.0.1",
+        "gulp-sass-grapher": "^1.0.0",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-upload": "^1.0.0",
+        "gulp-watch": "^5.0.1",
+        "gulp.spritesmith": "^6.11.0",
+        "inquirer": "^8.2.2",
+        "jsdoc": "^3.6.3",
+        "node-sass": "^7.0.1",
+        "path": "^0.12.7",
+        "rimraf": "^3.0.2"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.8.4",
+        "@babel/core": "^7.9.0",
+        "@babel/plugin-transform-runtime": "^7.10.1",
+        "@babel/preset-env": "^7.9.0",
+        "@babel/register": "^7.9.0",
+        "@sxa/celt": "^10.3.0",
+        "eslint": "^8.14.0",
+        "gulp-tap": "^2.0.0"
+    },
+    "babel": {
+        "presets": [
+            "@babel/env"
+        ],
+        "overrides": [
+            {
+                "sourceType": "unambiguous"
+            }
+        ]
+    }
+}
