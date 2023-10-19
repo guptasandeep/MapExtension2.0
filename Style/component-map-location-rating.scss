@@ -1,0 +1,44 @@
+.no-ratings-and-reviews {
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.ratings-and-reviews {	
+	.google-review {
+		text-decoration: underline;
+	}
+}
+
+[data-star] {
+  text-align: left;
+  font-style: normal;
+  display: inline-block;
+  position: relative;
+  unicode-bidi: bidi-override;
+}
+
+[data-star]::before {
+  display: block;
+  content: '★★★★★';
+  color: #eee;
+}
+
+[data-star]::after {
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '★★★★★';
+  width: 0;
+  color: #ff8c00;
+  overflow: hidden;
+  height: 100%;
+}
+
+@for $i from 1 through 50 {
+    [data-star^='#{0.10 * $i}'] {
+        &::after {
+            width: $i * 2%;
+        }
+    }
+}

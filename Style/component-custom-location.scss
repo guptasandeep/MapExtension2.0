@@ -1,0 +1,4 @@
+@import "base/search/_component-location";
+.custom-location-filter {
+   @extend .location-filter;
+}
