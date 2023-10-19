@@ -1,3 +1,4 @@
+/* eslint-disable */
 XA.component.geolocationcookiemanger = (function ($, document) {
 
     "use strict";

@@ -1,5 +1,5 @@
 XA.component.customLocationRatingAndReview = (function ($, document) {
-
+/* eslint-disable */
     "use strict";
     var api = {},
         scriptsLoaded = false;
