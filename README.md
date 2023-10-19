@@ -24,7 +24,7 @@ https://github.com/guptasandeep/SitecoreThinker.git
 - Copy the dlls - CustomSXA.Foundation.Search.dll and CustomSXA.Foundation.MapExtension.dll to your webroot\bin
 - Copy the App_Config files from both the solutions to your webroot\App_Config
 
-4. Restore the .\Database\sitecorethinker_Master.bacpac or install the tenant package .\Database\20221126.1448.demotenant-1.zip
+4. Install the tenant package .\Database\20231019.1827.demotenant-1.zip
 
 5. Make local host entry of sitecorethinker1031sc.dev.local
 
