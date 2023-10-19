@@ -1,0 +1,207 @@
+/* breakpoints */
+.location-filter, .custom-location-filter {
+  position: relative;
+  padding: 5px 10px 15px 10px;
+  margin: 0 0 20px 0;
+  /* breakpoints */
+  /* breakpoints */
+}
+
+.location-filter label, .custom-location-filter label {
+  background: transparent;
+  color: #747474;
+}
+
+.location-filter input, .custom-location-filter input, .location-filter button, .custom-location-filter button {
+  display: inline-block;
+  box-sizing: border-box;
+  background: #FFFFFF !important;
+  border: 1px solid #d2d2d2;
+  border-radius: 0 !important;
+  color: #747474;
+  font-weight: normal;
+  padding: 8px 2%;
+  clear: both;
+  height: auto;
+  font-size: 13px;
+}
+
+.location-filter input:focus, .custom-location-filter input:focus {
+  border: 1px solid #d2d2d2;
+}
+
+.location-filter input[type="submit"], .custom-location-filter input[type="submit"], .location-filter input[type="reset"], .custom-location-filter input[type="reset"], .location-filter input[type="button"], .custom-location-filter input[type="button"], .location-filter button, .custom-location-filter button {
+  border: 1px solid #89C6CC;
+  padding: 5px 20px;
+}
+
+.location-filter input[type="submit"]:hover, .custom-location-filter input[type="submit"]:hover, .location-filter input[type="reset"]:hover, .custom-location-filter input[type="reset"]:hover, .location-filter input[type="button"]:hover, .custom-location-filter input[type="button"]:hover, .location-filter button:hover, .custom-location-filter button:hover {
+  background: #f7f7f7 !important;
+}
+
+.location-filter input::-moz-focus-inner, .custom-location-filter input::-moz-focus-inner, .location-filter button::-moz-focus-inner, .custom-location-filter button::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+.location-filter input[type="text"], .custom-location-filter input[type="text"] {
+  font-size: 13px;
+}
+
+.location-filter input[type="text"], .custom-location-filter input[type="text"], .location-filter input[type="email"], .custom-location-filter input[type="email"], .location-filter input[type="password"], .custom-location-filter input[type="password"], .location-filter textarea, .custom-location-filter textarea, .location-filter select, .custom-location-filter select {
+  box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.1);
+  color: #747474;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #d2d2d2;
+}
+
+.location-filter select, .custom-location-filter select {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  box-sizing: border-box;
+  outline: none;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.location-filter .twitter-typeahead, .custom-location-filter .twitter-typeahead {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 100%;
+  width: 100%;
+}
+
+.location-filter .tt-menu, .custom-location-filter .tt-menu {
+  background: #FFFFFF;
+  width: 100%;
+  border: 1px solid #d2d2d2;
+}
+
+.location-filter .tt-hint, .custom-location-filter .tt-hint {
+  color: #747474;
+}
+
+.location-filter .tt-dropdown-menu, .custom-location-filter .tt-dropdown-menu {
+  width: 250px;
+  margin-top: 5px;
+  background-color: #f7f7f7;
+  border: 1px solid #d2d2d2;
+  max-height: 300px;
+  overflow-y: auto;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0, 0, 0, 0.08);
+}
+
+.location-filter .tt-suggestion, .custom-location-filter .tt-suggestion {
+  padding: 4px 10px;
+  color: #747474;
+  overflow: hidden;
+}
+
+.location-filter .tt-suggestion a, .custom-location-filter .tt-suggestion a {
+  text-decoration: none;
+}
+
+.location-filter .tt-suggestion:last-child, .custom-location-filter .tt-suggestion:last-child {
+  border: none;
+}
+
+.location-filter .tt-suggestion .field-image, .custom-location-filter .tt-suggestion .field-image {
+  width: 100px;
+  float: left;
+  margin-right: 10px;
+}
+
+.location-filter .tt-suggestion .field-make, .custom-location-filter .tt-suggestion .field-make {
+  font-size: 15px;
+  float: left;
+  margin-right: 5px;
+}
+
+.location-filter .tt-suggestion .field-model, .custom-location-filter .tt-suggestion .field-model {
+  margin-left: 4px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 100%;
+}
+
+.location-filter .tt-suggestion .field-priceformatted, .custom-location-filter .tt-suggestion .field-priceformatted {
+  float: right;
+  font-size: 15px;
+  color: #89C6CC;
+  margin-top: -20px;
+}
+
+.location-filter .tt-suggestion.tt-cursor, .custom-location-filter .tt-suggestion.tt-cursor {
+  color: #89C6CC;
+  background-color: #dadada;
+  cursor: pointer;
+}
+
+.location-filter.loading-in-progress .tt-dropdown-menu, .loading-in-progress.custom-location-filter .tt-dropdown-menu {
+  display: block !important;
+  min-height: 50px;
+  position: relative;
+}
+
+.location-filter.loading-in-progress .tt-dropdown-menu:after, .loading-in-progress.custom-location-filter .tt-dropdown-menu:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -20px;
+  margin-left: -20px;
+  height: 40px;
+  width: 50px;
+  display: block;
+  background-image: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMiAzMiIgd2lkdGg9IjMyIiBoZWlnaHQ9IjMyIiBmaWxsPSJibGFjayI+DQogIDxwYXRoICBvcGFjaXR5PSIuMjUiIGQ9Ik0xNiAwIEExNiAxNiAwIDAgMCAxNiAzMiBBMTYgMTYgMCAwIDAgMTYgMCBNMTYgNCBBMTIgMTIgMCAwIDEgMTYgMjggQTEyIDEyIDAgMCAxIDE2IDQiLz4NCiAgPHBhdGggZmlsbD0nIzFhODBiNicgZD0iTTE2IDAgQTE2IDE2IDAgMCAxIDMyIDE2IEwyOCAxNiBBMTIgMTIgMCAwIDAgMTYgNHoiPg0KICAgIDxhbmltYXRlVHJhbnNmb3JtIGF0dHJpYnV0ZU5hbWU9InRyYW5zZm9ybSIgdHlwZT0icm90YXRlIiBmcm9tPSIwIDE2IDE2IiB0bz0iMzYwIDE2IDE2IiBkdXI9IjAuOHMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPg0KICA8L3BhdGg+DQo8L3N2Zz4NCg==);
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 11;
+}
+
+.location-filter.loading-in-progress .tt-dropdown-menu:before, .loading-in-progress.custom-location-filter .tt-dropdown-menu:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f7f7f7;
+  opacity: 0.8;
+  z-index: 10;
+}
+
+.location-filter .component-content, .custom-location-filter .component-content {
+  display: flex;
+}
+
+.location-filter .component-content > div, .custom-location-filter .component-content > div, .location-filter .component-content > button, .custom-location-filter .component-content > button, .location-filter .component-content > label, .custom-location-filter .component-content > label, .location-filter .component-content > input, .custom-location-filter .component-content > input, .location-filter .component-content > span, .custom-location-filter .component-content > span {
+  order: 1;
+}
+
+.location-filter .component-content > label, .custom-location-filter .component-content > label, .location-filter .component-content > button, .custom-location-filter .component-content > button {
+  flex-grow: 1;
+}
+
+.location-filter .component-content > label, .custom-location-filter .component-content > label {
+  align-self: center;
+  text-align: center;
+}
+
+.location-filter .component-content > input, .custom-location-filter .component-content > input, .location-filter .component-content > span, .custom-location-filter .component-content > span {
+  flex-grow: 10;
+  width: auto;
+  margin: 0 5px;
+}
+
+.location-filter .tt-hint::-webkit-input-placeholder, .custom-location-filter .tt-hint::-webkit-input-placeholder {
+  color: transparent;
+}
+
+.location-filter .tt-hint::-moz-placeholder, .custom-location-filter .tt-hint::-moz-placeholder {
+  color: transparent;
+}
