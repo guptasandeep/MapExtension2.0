@@ -24,7 +24,7 @@ https://github.com/guptasandeep/SitecoreThinker.git
 - Copy the dlls - CustomSXA.Foundation.Search.dll and CustomSXA.Foundation.MapExtension.dll to your webroot\bin
 - Copy the App_Config files from both the solutions to your webroot\App_Config
 
-4. Restore the .\Database\sitecorethinker_Master.bacpac or install the tenant package .\Database\20221126.1448.demotenant-1.zip
+4. Restore the .\Database\sitecorethinker_Master.bacpac or install the tenant package .\Database\20231026.2328.demotenant-1.zip
 
 5. Make local host entry of sitecorethinker1031sc.dev.local
 
@@ -44,7 +44,9 @@ https://github.com/guptasandeep/SitecoreThinker.git
 Following are the blog post URLs and local test URLs which one can use to test it.
 
 1. SXA Map component Part 6 Google average rating and total reviews
-- Blog URL coming soon.
-- Test URL: https://sitecorethinker1031sc.dev.local/Location%20Demo/Google%20review%20and%20rating%20demo/Map
+- Blog URL	: https://blogs.perficient.com/2023/10/25/sxa-map-google-average-rating-and-total-reviews/
+- Test URL	: https://sitecorethinker1031sc.dev.local/Location%20Demo/Google%20review%20and%20rating%20demo/Map
 
-
+2. SXA Map component Part 7 Google reviews in a dialog
+- Blog URL	: https://blogs.perficient.com/2023/10/25/sxa-map-google-average-rating-and-total-reviews/
+- Test URL	: https://sitecorethinker1031sc.dev.local/Location%20Demo/Google%20review%20and%20rating%20demo/Map
