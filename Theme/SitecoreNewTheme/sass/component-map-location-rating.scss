@@ -4,9 +4,8 @@
 }
 
 .ratings-and-reviews {	
-	.google-review {
-		text-decoration: underline;
-	}
+	text-decoration: underline;
+    cursor: pointer;
 }
 
 [data-star] {
@@ -15,6 +14,8 @@
   display: inline-block;
   position: relative;
   unicode-bidi: bidi-override;
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 [data-star]::before {
@@ -40,5 +41,31 @@
         &::after {
             width: $i * 2%;
         }
+    }
+}
+
+.modal-rating-and-review {
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 10px;
+    [data-star] {
+      text-decoration: auto;
+      cursor: default;
+    }
+}
+
+.modal-title {
+    font-size: 100%;
+}
+
+.google-review-comment.row {
+    flex-shrink: 0;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 10px;
+    [data-star] {
+      text-decoration: auto;
+      cursor: default;
     }
 }
