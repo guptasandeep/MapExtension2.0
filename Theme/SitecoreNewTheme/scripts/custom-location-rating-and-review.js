@@ -121,15 +121,8 @@ XA.component.customLocationRatingAndReview = (function ($, document) {
 	
 	function getDateAndTimeFromTimestamp(timestamp)
 	{
-		var date = new Date(timestamp * 1000);
-		var year = date.getFullYear();
-		var month = date.getMonth() + 1; // Month is zero-based, so add 1
-		var day = date.getDate();
-		var hours = date.getHours();
-		var minutes = date.getMinutes();
-		var seconds = date.getSeconds();
-
-		var formattedDate = year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;
+		const date = new Date(timestamp * 1000);
+		const formattedDate = date.toLocaleString();
 		return formattedDate;
 	}
 		
