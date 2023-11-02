@@ -85,7 +85,7 @@ namespace CustomSXA.Foundation.MapExtension.Controllers
                       }
                     };
                     if (finalResult == null)
-                        finalResult = this._variantRenderingService.RenderVariantWithParameters(variantItem, contentItem, RendererMode.Html, parameters);
+                        finalResult = this._variantRenderingService.RenderVariantWithParameters(variantItem, item, RendererMode.Html, parameters);
                     else
                     {
                         finalResult.Html += "<hr/>" + this._variantRenderingService.RenderVariantWithParameters(variantItem, item, RendererMode.Html, parameters).Html;
