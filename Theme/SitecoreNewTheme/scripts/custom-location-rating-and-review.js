@@ -124,6 +124,7 @@ XA.component.customLocationRatingAndReview = (function ($, document) {
 		XA.component.search.vent.on("results-loaded", function(i) {
 			var searchResultItemRatingReviewDiv = $('.rating-and-review-search-result');
 			if(searchResultItemRatingReviewDiv.length > 0) {
+				//XA.connector.mapsConnector.loadScript is function that accepts key and a function which is called once the script Google Map API JavaScript file is loaded
 				XA.connector.mapsConnector.loadScript(searchResultItemRatingReviewDiv.attr("id"), function(){
 					searchResultItemRatingReviewDiv.each(function() {
 					var ratingReviewMainDivId = $(this).attr("id");

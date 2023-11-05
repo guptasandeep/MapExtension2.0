@@ -13,8 +13,7 @@ XA.connector.mapsConnector = (function ($, document) {
         addMarker,
         callbacks = [],
         animationTimeout,
-        loading = false,
-		loaded = false;
+        loading = false;
 
     getMapType = function (options) {
         switch (options.mode) {
@@ -94,16 +93,16 @@ XA.connector.mapsConnector = (function ($, document) {
 			{
 				// Google Maps API has already been loaded, no need to add it again
 				console.log("Google Maps API is already loaded");
+				callback.call(); //call the callback if the google is defined 
 			}
         }
-		else if(loaded)
+		else if(typeof google !== "undefined") 
 		{
-			callback.call();
+			callback.call(); //call the callback if the google is defined and the loading has finished
 		}
     };
 
     api.scriptsLoaded = function () {
-		loaded = true;
         var i, length = callbacks.length;
         for (i = 0; i < length; i++) {
             callbacks[i].call();
