@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSXA.Foundation.MapExtension", "MapExtension\CustomSXA.Foundation.MapExtension.csproj", "{496FB802-A699-4593-B288-31E24BDB611F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSXA.Foundation.Search", "CustomSXA.Foundation.Search\CustomSXA.Foundation.Search.csproj", "{BB0FF1CF-8C3F-49A3-8445-ABA5A4F20CB9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomSXA.Foundation.SiteMetaData", "CustomSXA.Foundation.SiteMetaData\CustomSXA.Foundation.SiteMetaData.csproj", "{E53BE5CE-A756-44A2-92DD-735800C47372}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{496FB802-A699-4593-B288-31E24BDB611F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{496FB802-A699-4593-B288-31E24BDB611F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{496FB802-A699-4593-B288-31E24BDB611F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB0FF1CF-8C3F-49A3-8445-ABA5A4F20CB9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB0FF1CF-8C3F-49A3-8445-ABA5A4F20CB9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB0FF1CF-8C3F-49A3-8445-ABA5A4F20CB9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB0FF1CF-8C3F-49A3-8445-ABA5A4F20CB9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E53BE5CE-A756-44A2-92DD-735800C47372}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E53BE5CE-A756-44A2-92DD-735800C47372}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E53BE5CE-A756-44A2-92DD-735800C47372}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E53BE5CE-A756-44A2-92DD-735800C47372}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
