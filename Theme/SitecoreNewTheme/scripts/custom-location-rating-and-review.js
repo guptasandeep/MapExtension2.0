@@ -6,13 +6,14 @@ XA.component.customLocationRatingAndReview = (function ($, document) {
 			
 	api.init = function() {
 		if ($("body").hasClass("on-page-editor")) {
-		return;
+			return;
 		}
 		if(!scriptsLoaded && document.querySelector('.component.map'))
 		{
 			scriptsLoaded = true;
 			api.listenInfowindowOpenEvent();
-		}	
+			api.listenSearchResultLoaded();
+		}				
     };	
 	
 	api.setRatingAndReviewBySearchText = function(ratingAndReviewDivId, noRatingAndReviewDivId, searchText) {
@@ -53,7 +54,7 @@ XA.component.customLocationRatingAndReview = (function ($, document) {
 						
 						//On click of Rating and review text, open the Modal showing the recent reviews.  
 						ratingAndReviewDiv.click(function(){
-							var existingReviewModal = $(`${ratingAndReviewDiv.attr('id')}-modal`);
+							var existingReviewModal = $(`#${ratingAndReviewDiv.attr('id')}-modal`);
 							var reviewModal;
 							var exampleModel = $('#exampleModal');
 							if(exampleModel.length == 0)
@@ -63,7 +64,7 @@ XA.component.customLocationRatingAndReview = (function ($, document) {
 							
 							if(existingReviewModal.length == 0)
 							{
-								var locationName = $(`#${ratingAndReviewDiv.attr('id')}-main .title`).text();
+								var locationName = $(`#${ratingAndReviewDiv.attr('id')}-main .title`).text() || $(`#${ratingAndReviewDiv.attr('id')}-search-result .title`).text(); //supporting both the clicks binded for map marker info window and search results items
 								var ratingAndReviewData = ratingAndReviewDiv.html();
 								reviewModal = exampleModel.clone();
 								reviewModal.attr('id',`${ratingAndReviewDiv.attr('id')}-modal`);
@@ -117,6 +118,25 @@ XA.component.customLocationRatingAndReview = (function ($, document) {
 				});				
 			}
 		});
+	}
+	
+	api.listenSearchResultLoaded = function() {
+		XA.component.search.vent.on("results-loaded", function(i) {
+			var searchResultItemRatingReviewDiv = $('.rating-and-review-search-result');
+			if(searchResultItemRatingReviewDiv.length > 0) {
+				//XA.connector.mapsConnector.loadScript is function that accepts key and a function which is called once the script Google Map API JavaScript file is loaded
+				XA.connector.mapsConnector.loadScript(searchResultItemRatingReviewDiv.attr("id"), function(){
+					searchResultItemRatingReviewDiv.each(function() {
+					var ratingReviewMainDivId = $(this).attr("id");
+					var poiId = ratingReviewMainDivId.replace('-rating-and-review-search-result','');
+					var ratingReviewDivId = `${poiId}-rating-and-review`;
+					var noRatingReviewDivId = `${poiId}-no-rating-and-review`;
+					var locationTitleText = $(`#${ratingReviewMainDivId} .title`).text();
+						api.setRatingAndReviewBySearchText(ratingReviewDivId,noRatingReviewDivId,locationTitleText);
+					});						
+				});
+			}				
+		});		
 	}
 	
 	function getDateAndTimeFromTimestamp(timestamp)

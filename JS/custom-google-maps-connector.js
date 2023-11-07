@@ -73,21 +73,33 @@ XA.connector.mapsConnector = (function ($, document) {
 
         if (!loading) {
             loading = true;
-            var script = document.createElement("script"),
-                src = "https://maps.googleapis.com/maps/api/js?v=3.exp";
-            script.type = "text/javascript";
-            if (typeof key !== "undefined" && key !== "") {
-                src += "&key=" + key + "&v=3.exp&signed_in=false";
-            } else {
-                src += "&signed_in=false";
-            }
-            src += "&libraries=places&callback=XA.connector.mapsConnector.scriptsLoaded";
-            script.src = src;
-            script.onload = function () {
-                console.log("Google loader has been loaded, waiting for maps api");
-            };
-            document.body.appendChild(script);
+			if (typeof google === "undefined") {
+				var script = document.createElement("script"),
+					src = "https://maps.googleapis.com/maps/api/js?v=3.exp";
+				script.type = "text/javascript";
+				if (typeof key !== "undefined" && key !== "") {
+					src += "&key=" + key + "&v=3.exp&signed_in=false";
+				} else {
+					src += "&signed_in=false";
+				}
+				src += "&libraries=places&callback=XA.connector.mapsConnector.scriptsLoaded";
+				script.src = src;
+				script.onload = function () {
+					console.log("Google loader has been loaded, waiting for maps api");
+				};
+				document.body.appendChild(script);
+			}
+			else
+			{
+				// Google Maps API has already been loaded, no need to add it again
+				console.log("Google Maps API is already loaded");
+				callback.call(); //call the callback if the google is defined 
+			}
         }
+		else if(typeof google !== "undefined") 
+		{
+			callback.call(); //call the callback if the google is defined and the loading has finished
+		}
     };
 
     api.scriptsLoaded = function () {
@@ -95,7 +107,7 @@ XA.connector.mapsConnector = (function ($, document) {
         for (i = 0; i < length; i++) {
             callbacks[i].call();
         }
-        loading = false;
+        loading = false;	
     };
 
     api.showMap = function(mapId, options, viewBounds) {
