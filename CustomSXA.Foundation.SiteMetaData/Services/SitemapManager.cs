@@ -1,5 +1,4 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
-using Sitecore;
 using Sitecore.Abstractions;
 using Sitecore.Data;
 using Sitecore.Data.Items;
@@ -12,15 +11,17 @@ using Sitecore.XA.Foundation.SiteMetadata.Enums;
 using Sitecore.XA.Foundation.SiteMetadata.Models.Sitemap;
 using Sitecore.XA.Foundation.SiteMetadata.Pipelines.Sitemap.CreateSitemap;
 using Sitecore.XA.Foundation.SiteMetadata.Pipelines.Sitemap.RenderSitemap;
-using Sitecore.XA.Foundation.SiteMetadata.Services;
 using Sitecore.XA.Foundation.SiteMetadata.Settings;
 using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
-using System.Text;
 using System.Web;
 using System.Web.Caching;
+
+using Sitecore;
+using Sitecore.XA.Foundation.SiteMetadata.Services;
+using System.IO;
+using System.Text;
 using System.Xml;
 
 namespace CustomSXA.Foundation.SiteMetaData.Services
