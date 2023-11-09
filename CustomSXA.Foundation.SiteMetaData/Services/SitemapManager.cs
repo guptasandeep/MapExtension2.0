@@ -130,12 +130,11 @@ namespace CustomSXA.Foundation.SiteMetaData.Services
             }
             else
             {
+                List<string> stringList = new List<string>();
+                SplitSitemap(sitemapSettings, stringList, items);
                 sitemap = new SitemapContent()
                 {
-                    Values = new List<string>()
-                    {
-                        this.RenderSitemap(items, sitemapSettings)
-                    }
+                    Values = stringList
                 };
             }
             this.SetRefreshDate(site);
@@ -169,7 +168,7 @@ namespace CustomSXA.Foundation.SiteMetaData.Services
             return args2.Result.ToString();
         }
 
-        private void SplitSitemap(SitemapSettings sitemapSettings, List<string> stringList, List<Item> objList)
+        private void SplitSitemap(SitemapSettings sitemapSettings, List<string> stringList, IList<Item> objList)
         {
             string originalSiteMap = this.RenderSitemap((IList<Item>)objList, sitemapSettings);
             List<string> listOfSiteMap = SplitSitemap(originalSiteMap, SitemapMaxSizeLimit);
