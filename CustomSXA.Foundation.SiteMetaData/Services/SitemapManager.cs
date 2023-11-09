@@ -172,15 +172,15 @@ namespace CustomSXA.Foundation.SiteMetaData.Services
         private void SplitSitemap(SitemapSettings sitemapSettings, List<string> stringList, IList<Item> objList)
         {
             string originalSiteMap = this.RenderSitemap((IList<Item>)objList, sitemapSettings);
-            List<string> listOfSiteMap = SplitSitemap(originalSiteMap, SitemapMaxSizeLimit);
+            List<string> listOfSiteMap = SplitSitemap(originalSiteMap);
             stringList.AddRange(listOfSiteMap);
         }
 
-        public List<string> SplitSitemap(string originalSitemap, long sizeLimitInBytes)
+        public List<string> SplitSitemap(string originalSitemap)
         {
             //return the same original sitemap back if its size is within the given limit 
             List<string> sitemapSegments = new List<string>();
-            if (Encoding.UTF8.GetBytes(originalSitemap).Length <= sizeLimitInBytes)
+            if (Encoding.UTF8.GetBytes(originalSitemap).Length <= SitemapMaxSizeLimit)
             {
                 sitemapSegments.Add(originalSitemap);
                 return sitemapSegments;            
@@ -222,7 +222,7 @@ namespace CustomSXA.Foundation.SiteMetaData.Services
                         int urlSizeInBytes = Encoding.UTF8.GetBytes(urlElement).Length;
                         long newSize = currentSize + urlSizeInBytes;
 
-                        if (newSize + "</urlset>".Length > sizeLimitInBytes)
+                        if (newSize + "</urlset>".Length > SitemapMaxSizeLimit)
                         {
                             // Close the previous <urlset> tag
                             currentSegment.AppendLine("</urlset>");
