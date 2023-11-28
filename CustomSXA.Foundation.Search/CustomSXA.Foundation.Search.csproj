@@ -201,6 +201,7 @@
   <ItemGroup>
     <Compile Include="ComputedFields\FullName.cs" />
     <Compile Include="ComputedFields\Multiplecoordinates.cs" />
+    <Compile Include="ComputedFields\MultiValueComputedField.cs" />
     <Compile Include="Helper\GeoLocationHelper.cs" />
     <Compile Include="Helper\LocationItemExtensions.cs" />
     <Compile Include="PopulateHelper\CustomPopulateHelper.cs" />
