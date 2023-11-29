@@ -26,7 +26,7 @@ https://github.com/guptasandeep/MapExtension2.0.git
 - Update the IIS Site bindings and host file for the local domain - sitecorethinker1031sc.dev.local.
      - 127.0.0.1 sitecorethinker1031sc.dev.local
 - Login to Sitecore
-     - Provide valid Google Map API key with Maps API, Places API, and Geocoding API services enabled.
+     - Provide a valid Google Map API key in the field Key of /sitecore/content/demotenant/sitecorethinker/Settings/Maps Provider. Key must enabled with Maps API, Places API, and Geocoding API services.
      - Ensure domain - sitecorethinker1031sc.dev.local is updated in Target Hostname and Hostname in /sitecore/content/demotenant/sitecorethinker/Settings/Site Grouping/sitecorethinker-cm.
 
 
