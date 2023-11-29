@@ -69,6 +69,7 @@ Following are the blog post URLs and local test URLs which one can use to test i
 
 8. SXA Search Components and Customization
 - Blog URL	: https://sitecorethinker.wordpress.com/2023/11/29/sxa-search-components-and-customization/
+- Ensure domain - sitecorethinker1031sc.dev.local is updated in Target Hostname and Hostname in /sitecore/content/demotenant/sitecorethinker/Settings/Site Grouping/sitecorethinker-cm and remove from /sitecore/content/SitecoreThinkerTenant/sitecorethinker/Settings/Site Grouping/sitecorethinker.
 - Test URLs	:
    - https://sitecorethinker1031sc.dev.local/Search/Developers%20search%20demo
    - https://sitecorethinker1031sc.dev.local/Search/Developers%20Search%20Demo%20with%20Pagination
