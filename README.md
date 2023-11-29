@@ -24,6 +24,7 @@ https://github.com/guptasandeep/MapExtension2.0.git
 - Restore the Sitecore Master database .bacpac file from https://github.com/guptasandeep/MapExtension2.0/blob/master/Database/sitecorethinker1031_Master_29_Nov_2023.bacpac
 - Update the connection strings accordingly.
 - Update the IIS Site bindings and host file for the local domain - sitecorethinker1031sc.dev.local.
+- Login to Sitecore, and ensure domain - sitecorethinker1031sc.dev.local is updated in Target Hostname and Hostname in /sitecore/content/demotenant/sitecorethinker/Settings/Site Grouping/sitecorethinker-cm.
 
 127.0.0.1 sitecorethinker1031sc.dev.local
 
