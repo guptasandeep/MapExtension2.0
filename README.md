@@ -1,11 +1,11 @@
-# Sandeepkumar Gupta blog posts contribution
+# Sandeepkumar Gupta's blog post contribution
 
 Following are the instructions to test the source code shown in the blog posts.
 - https://blogs.perficient.com/author/gsandeepkumar/ 
 
 ## PreRequisites
 
-- Sitecore 10.3 with SXA installed in local
+- Sitecore 10.3 Update 1 with SXA installed in local
 - Developer workstation to validate the solution
 - Google Map provider key. Make sure the Places API and Maps Javascript API are enabled on the key.
 
@@ -15,27 +15,20 @@ Following are the instructions to test the source code shown in the blog posts.
 
 https://github.com/guptasandeep/MapExtension2.0.git
 
-https://github.com/guptasandeep/SitecoreThinker.git
-
 2. Take backup of webroot\App_Config and webroot\bin folders. 
 
-3. In cloned repositories, 
-- Build both the solutions
-- Copy the dlls - CustomSXA.Foundation.Search.dll and CustomSXA.Foundation.MapExtension.dll to your webroot\bin
-- Copy the App_Config files from both the solutions to your webroot\App_Config
-
-4. Restore the .\Database\sitecore1031_master.bacpac or install the tenant package .\Database\20231102.2307.demotenant-1.zip
-
-5. Make local host entry of sitecorethinker1031sc.dev.local
+3. Deploy the files.
+   In cloned repositories,
+- Copy all the binaries from https://github.com/guptasandeep/MapExtension2.0/tree/master/setup/bin_binaries to the Sitecore instance bin folder.
+- Copy Include folder from https://github.com/guptasandeep/MapExtension2.0/tree/master/setup/App_Config to the Sitecore instance App_Config folder.
+- Restore the Sitecore Master database .bacpac file from https://github.com/guptasandeep/MapExtension2.0/blob/master/Database/sitecorethinker1031_Master_29_Nov_2023.bacpac
+- Update the connection strings accordingly.
+- Update the IIS Site bindings and host file for the local domain - sitecorethinker1031sc.dev.local.
 
 127.0.0.1 sitecorethinker1031sc.dev.local
+4. Publish all the items.
 
-6. In the IIS site node, add the binding of sitecorethinker1031sc.dev.local
-
-7. Log in to Sitecore, traverse to the below item, and provide the valid Google Map provider key in the field Key. Save and do the full site publish.
-- /sitecore/content/demotenant/sitecorethinker/Settings/Maps Provider
-
-8. From the Sitecore control panel > please do the Populate Solr Managed Schema and Rebuild all the indexes.
+3. From the Sitecore control panel > please do the Populate Solr Managed Schema and Rebuild all the indexes.
 
 ## Contributions on the Perficient Blog https://blogs.perficient.com/author/gsandeepkumar/
 
