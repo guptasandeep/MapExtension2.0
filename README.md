@@ -12,7 +12,7 @@ Following are the instructions to test the source code shown in the blog posts.
 
 ## Setup
 
-1. Clone the below repositories 
+1. Clone the below repository 
 
 https://github.com/guptasandeep/MapExtension2.0.git
 
