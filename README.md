@@ -1,7 +1,8 @@
 # Sandeepkumar Gupta's blog post contribution
 
 Following are the instructions to test the source code shown in the blog posts.
-- https://blogs.perficient.com/author/gsandeepkumar/ 
+- https://blogs.perficient.com/author/gsandeepkumar/
+- https://sitecorethinker.wordpress.com/
 
 ## PreRequisites
 
