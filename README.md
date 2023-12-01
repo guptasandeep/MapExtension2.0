@@ -16,7 +16,7 @@ Following are the instructions to test the source code shown in the blog posts.
 
 https://github.com/guptasandeep/MapExtension2.0.git
 
-2. Take backup of webroot\App_Config and webroot\bin folders. 
+2. Take a backup of webroot\App_Config and webroot\bin folders of your Sitecore Instance. 
 
 3. Deploy the files.
    In cloned repositories,
@@ -29,8 +29,6 @@ https://github.com/guptasandeep/MapExtension2.0.git
 - Login to Sitecore
      - Provide a valid Google Map API key in the field Key of /sitecore/content/demotenant/sitecorethinker/Settings/Maps Provider. Key must enabled with Maps API, Places API, and Geocoding API services.
      - Ensure domain - sitecorethinker1031sc.dev.local is updated in Target Hostname and Hostname in /sitecore/content/demotenant/sitecorethinker/Settings/Site Grouping/sitecorethinker-cm.
-
-
 
 4. Publish all the items.
 
