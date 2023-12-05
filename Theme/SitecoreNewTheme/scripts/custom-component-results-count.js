@@ -8,7 +8,7 @@ XA.component.customcomponentresultscount = (function($) {
             }
             XA.component.search.vent.on("results-loaded", function (data) {
                 let resultsDiv = $(".custom-results-count .results-count");
-                if (resultsDiv) {
+                if (resultsDiv && resultsDiv.length > 0) {
                     var signature = $(".search-results-count").data("properties");
                     if(signature){
                         signature = signature.targetSignature;
